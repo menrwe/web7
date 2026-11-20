@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Динамічна таблиця (jQuery)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+    <h1>Веб-технології · ЛР №7 (AJAX)</h1>
+    <nav><a href="index.php">Анкета</a> <a href="jokes.html">Жарти</a> <a href="table.html">Таблиця (jQuery)</a> <a href="admin.php">Адмін</a></nav>
+</header>
+<main>
+    <div class="card">
+        <h2>Динамічна таблиця з API</h2>
+        <p class="muted">Джерело даних: <code>http://lab.vntu.org/api-server/lab7.php</code></p>
+        <div class="actions">
+            <button id="refresh">Оновити дані</button>
+            <button id="sortName">Сортувати за іменем (name)</button>
+            <button id="sortAff">Сортувати за фракцією (affiliation)</button>
+        </div>
+        <p id="status" class="muted"></p>
+        <div class="scroll"><table id="dataTable"><thead></thead><tbody></tbody></table></div>
+    </div>
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/table.js"></script>
+</body>
+</html>

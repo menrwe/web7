@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Випадковий жарт (AJAX)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+    <h1>Веб-технології · ЛР №7 (AJAX)</h1>
+    <nav><a href="index.php">Анкета</a> <a href="jokes.html">Жарти</a> <a href="table.html">Таблиця (jQuery)</a> <a href="admin.php">Адмін</a></nav>
+</header>
+<main>
+    <div class="card">
+        <h2>Випадковий жарт</h2>
+        <p>Жарти підвантажуються з файлу <code>jokes.txt</code> за допомогою <code>XMLHttpRequest</code>, сторінка не перезавантажується.</p>
+        <blockquote id="joke" class="joke">Натисніть кнопку, щоб отримати жарт…</blockquote>
+        <p><button id="btn">Показати випадковий жарт</button></p>
+    </div>
+</main>
+<script src="js/jokes.js"></script>
+</body>
+</html>
